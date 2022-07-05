@@ -1,0 +1,46 @@
+﻿@page
+@model AppMaPay.Pages.Admins.AdminLoginModel
+@{
+}
+
+<div class="container bg-light p-5" style="height: 400px; width: 350px; margin: 50px auto 0;">
+<h1 class="text-info">Admin login</h1>
+<form id="loginForm" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group mb-3 mt-4">
+        <label asp-for="admin.useremail">Email: </label>
+        <input type="email" asp-for="admin.useremail" class="form-control">
+        <span asp-validation-for="admin.useremail" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="admin.password">Password: </label>
+        <input type="password" asp-for="admin.password" class="form-control">
+        <span asp-validation-for="admin.password" class="text-danger"></span>
+    </div>
+    <button type="submit" id="loginBtn" class="btn btn-info d-block w-100 mt-5" disabled>Log In</button>
+</form>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+<script>
+    var $form = $("#loginForm");
+    var $btn = $("#loginBtn");
+
+    $form.on("blur", "input", () => {
+        
+        //console.log($form.valid());
+        if($form.valid())
+        {
+            $btn.removeAttr("disabled");
+        }
+        else
+        {
+            $btn.attr("disabled", "disabled");
+        }
+    });
+</script>
+}

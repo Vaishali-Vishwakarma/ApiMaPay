@@ -1,0 +1,33 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.container aside nav ul .nav-list{
+    font: 800 20px monospace;
+}
+.container aside nav ul .nav-list:hover {
+    background-color: #0dcaf0;
+}
+#main>div:nth-child(2) {
+    display: none;
+} 
+#main>div:nth-child(3) {
+    display: none;
+} 
+#main>div:nth-child(4) {
+    display: none;
+}

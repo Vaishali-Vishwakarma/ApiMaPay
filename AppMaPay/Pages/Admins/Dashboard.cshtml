@@ -1,0 +1,68 @@
+﻿@page 
+@model AppMaPay.Pages.Admins.DashboardModel
+@{
+}
+<div class="container bg-danger p-0 d-flex">
+	<aside class="bg-dark" style="height:670px; width:20%;">
+		<div class="bg-white mx-auto my-5" style="width:200px; height:200px;">
+			@*<img src="" class="h-100 w-100"/>*@
+		</div>
+		<nav>
+			<ul class="navbar-nav text-center w-75 mx-auto">
+				<li class="nav-list rounded my-2"><a id="profile_link" class="nav-link text-white" href="#profile">Profile</a></li>
+				<li class="nav-list rounded my-2"><a id="documents_link" class="nav-link text-white" href="#documents">View Documents</a></li>
+				<li class="nav-list rounded my-2"><a id="accepted_link" class="nav-link text-white" href="#accepted">Accepted</a></li>
+				<li class="nav-list rounded my-2"><a id="rejected_link" class="nav-link text-white" href="#rejected">Rejected</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main id="main" class="bg-info position-relative" style="width:80%;">
+		<div id="profile" class="position-absolute">
+			<h1>profile</h1>
+		</div>
+		<div id="documents" class="position-absolute">
+			<h1>documents</h1>
+		</div>
+		<div id="accepted" class="position-absolute">
+			<h1>accepted</h1>
+		</div>
+		<div id="rejected" class="position-absolute">
+			<h1>rejected</h1>
+		</div>
+	</main>
+</div>
+<script>
+let profile = document.getElementById("profile"),
+	documents = document.getElementById("documents"),
+	accepted = document.getElementById("accepted"),
+	rejected = document.getElementById("rejected"),
+	profile_link = document.getElementById("profile_link"),
+	documents_link = document.getElementById("documents_link"),
+	accepted_link = document.getElementById("accepted_link"),
+	rejected_link = document.getElementById("rejected_link");
+
+	profile_link.addEventListener("click",()=>{
+		profile.style.display="block";
+		documents.style.display="none";
+		accepted.style.display="none";
+		rejected.style.display="none";
+	});
+	documents_link.addEventListener("click",()=>{
+		profile.style.display="none";
+		documents.style.display="block";
+		accepted.style.display="none";
+		rejected.style.display="none";
+	});
+	accepted_link.addEventListener("click",()=>{
+		profile.style.display="none";
+		documents.style.display="none";
+		accepted.style.display="block";
+		rejected.style.display="none";
+	});
+	rejected_link.addEventListener("click",()=>{
+		profile.style.display="none";
+		documents.style.display="none";
+		accepted.style.display="none";
+		rejected.style.display="block";
+	});
+</script>

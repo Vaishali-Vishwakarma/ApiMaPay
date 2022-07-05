@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMaPay", "ApiMaPay\ApiMaPay.csproj", "{B8D68448-7B91-4118-8F37-A78A7C2D18BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMaPay", "AppMaPay\AppMaPay.csproj", "{86DEAB60-E032-4303-998F-D4823345794B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8D68448-7B91-4118-8F37-A78A7C2D18BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D68448-7B91-4118-8F37-A78A7C2D18BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D68448-7B91-4118-8F37-A78A7C2D18BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D68448-7B91-4118-8F37-A78A7C2D18BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DEAB60-E032-4303-998F-D4823345794B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DEAB60-E032-4303-998F-D4823345794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DEAB60-E032-4303-998F-D4823345794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DEAB60-E032-4303-998F-D4823345794B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B605E8B0-8843-4BDF-91BB-49B1FC33BE4F}
+	EndGlobalSection
+EndGlobal
